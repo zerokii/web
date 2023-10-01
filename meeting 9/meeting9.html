@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="meeting9.css">
+</head>
+<body>
+    <p id="hello" class="blue">Hi World!</p>
+    <p>anime</p>
+
+<script>
+        var result = document.getElementById("hello");
+        console.log(result);
+
+        console.log(result.innerText);
+        document.getElementsByClassName("blue")[0].className = "red";
+        document.getElementsByTagName("p")[0].style.color = "green";
+        document.getElementsByTagName("p")[1].setAttribute("class","red")
+</script>
+</body>
+</html>

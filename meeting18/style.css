@@ -1,0 +1,61 @@
+.column1 {
+  flex: 1;
+  padding: 10px;
+  background-color: green;
+}
+
+.column2 {
+  flex: 1;
+  padding: 10px;
+  background-color: red;
+}
+
+/*transition*/
+.aircraft {
+  width: 100px;
+  transition: width 2s, height 4s, transform 2s;
+}
+
+.column1:active .aircraft {
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 1650px;
+}
+
+/*animation*/
+.helicopter {
+  width: 100px;
+  animation: copterAni 5s infinite;
+}
+
+/* movie - consists multiple frames
+keyframes - an important frame that shows signficant changes 
+*/
+@keyframes copterAni {
+  0% {
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  25% {
+    margin-left: 500px;
+    margin-top: 50px;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    margin-left: 900px;
+    margin-top: 25px;
+  }
+
+  75% {
+    margin-left: 1100px;
+    margin-top: 100px;
+  }
+
+  100% {
+    margin-left: 1600px;
+    margin-top: 0px;
+    transform: rotate(-360deg);
+  }
+}

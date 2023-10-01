@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinematicJourney</title>
+    <script src="https://kit.fontawesome.com/f90068558c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-image: url('assets/batsignal2.jpg');background-size: cover;background-repeat: no-repeat;">
+    <header>
+        <nav class="navbar navbar-expand-md bg-body-tertiary" style="background-color: grey;">
+            <div class="container-xxl px-3">
+                <div style="cursor:pointer" onclick="document.location='index.html'">
+                    <img class="navbar-logo align-middle ps-3 pe-1" style="display: inline-block"
+                        src="assets/video-camera (1).png" alt="img" />
+                    <p class="navbar-brand align-middle p-0 m-0" style="display: inline-block;">CinematicJourney
+                    </p>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav"
+                    aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse px-3" id="myNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link active rounded press" aria-current="page"
+                                href="index.html">
+                                Home</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link active rounded press" aria-current="page"
+                                href="about.html">
+                                About Me</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link active rounded press" aria-current="page"
+                                href="detail.html">
+                                Movies</a>
+                        </li>
+                        <li class="nav-item"> <a class="nav-link active rounded press" aria-current="page"
+                                href="contact.html">
+                                Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+        </nav>
+
+    </header>
+    <main>
+        <div class="container-xxl p-0">
+            <div class="container-fluid">
+                <div class="row p-3">
+                    <div class="col-12 col-md-6 my-5">
+                        <div class="ratio ratio-16x9 mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45071.87710209699!2d101.65710151356156!3d3.1398834236785245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1688787466643!5m2!1sen!2smy" width="1920" height="1080" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 float-right my-5">
+                        <form action="https://formsubmit.co/z3rocolt@gmail.com" autocomplete="off" method="POST">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" class="next">
+        <h1 style="color: white;">Contact Me</h1>
+                            <div class="form-container">
+                                <!-- Input Name Column -->
+                                <div class="input-container">
+                                    <div class="icon">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="form-input">
+                                        <input class="input-item" type="text" name="name" id="name" placeholder=" ">
+                                        <label for="name" class="form-label"> Name</label>
+                                    </div>
+                                </div>
+                                <!-- Input City Column -->
+                                <div class="input-container">
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="form-input">
+                                        <input class="input-item" type="text" name="city" id="city" placeholder=" ">
+                                        <label for="city" class="form-label">City</label>
+                                    </div>
+                                </div>
+                                <!-- Input Email Column -->
+                                <div class="input-container">
+                                    <div class="icon">
+                                        <i class="far fa-envelope-open"></i>
+                                    </div>
+                                    <div class="form-input">
+                                        <input class="input-item" type="text" name="email" id="email" placeholder=" ">
+                                        <label for=" email" class="form-label">Email</label>
+                                    </div>
+                                </div>
+                                <!-- Input Message Column -->
+                                <div class="textarea-container">
+                                    <div class="icon">
+                                        <i class="fas fa-comment"></i>
+                                    </div>
+                                    <div class="form-textarea">
+                                        <textarea class="textarea" type="text" name="message" id="message" cols="40" rows="8"
+                                            placeholder=" "></textarea>
+                                        <label for=" message" class="form-label">Message</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Submit" class="submit">
+                            
+                        </form>
+                    </div>
+                    <div class="modal-container">
+                        <div class="modal">
+                            <img src="assets/mee.jpg" alt="">
+                            <h3> Message Sent </h3>
+                            <p> Thank you for submitting ! </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+
+    </main>
+    <footer class="text-center text-lg-start mt-auto" style="background-color: black;">
+        <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;" >
+            <i class="fa fa-chrome" aria-hidden="true" onclick="document.location='https://www.google.com/chrome/'"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;" >
+            <i class="fa fa-telegram" aria-hidden="true" onclick="document.location='https://web.telegram.org/k/'"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;" >
+            <i class="fa fa-instagram" aria-hidden="true" onclick="document.location='https://www.instagram.com/'"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;" >
+            <i class="fa fa-internet-explorer" aria-hidden="true" onclick="document.location='https://www.bing.com/#!'"></i>
+            </button>
+        </div>
+        <div class="text-center text-white p-3" style="background-color: rgba(0,0,0,0.2)">
+            @ 2023 Copyright:
+            <a class="text-white" href="index.html" style="text-decoration: none">Watch Movies With Me</a>
+        </div>
+
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

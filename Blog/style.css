@@ -1,0 +1,666 @@
+/* ---------------------------------- Navigation ---------------------------------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: rgb(38, 70, 83);
+    z-index: 100;
+}
+
+.header-icon {
+    width: 40px;
+    margin: 8px 15px;
+    position: absolute;
+}
+
+.title {
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    padding: 0;
+    margin: 14px 30px 0px;
+    color: rgb(244, 162, 97);
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    margin: 14px 30px 0px;
+}
+
+a {
+    color: rgb(244, 162, 97);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Jumbotron */
+main {
+    /* margin-top: 60px; */
+}
+
+#jumbotron {
+    width: 100%;
+}
+
+.jumbotron {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(38, 70, 83);
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.jumbotron-title {
+    color: rgb(224, 251, 252);
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.jumbotron-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 8px solid rgb(244, 162, 97);
+}
+
+/* you may add other styles */
+.jumbotron-img {
+    height: 300px;
+}
+
+.mini-text-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mini-text {
+    color: rgb(224, 251, 252);
+    text-align: left;
+    margin-right: 5px;
+}
+
+.fa-hand-point-up {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.icon-down {
+    display: none;
+}
+
+.fa-hand-point-down {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(38, 70, 83);
+    border-style: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(5px);
+}
+
+
+.main-content {
+    margin: 10%;
+}
+
+article {
+    max-width: 100%;
+}
+
+.article-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0 30px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 10px 30px;
+    border-bottom: 10px solid #e76f51;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.project-title {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+.maps {
+    padding: 10px;
+}
+
+iframe {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 40px gainsboro;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+.item-video {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: rgb(38, 70, 83);
+}
+
+/* ---------------------------------- Contact ---------------------------------- */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ---------------------------------- Contact Page ---------------------------------- */
+.illustration-img {
+    margin: 0px;
+    width: 800px;
+}
+
+.contact {
+    display: inline-block;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.profile-contact-img {
+    width: 200px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.icon {
+    margin-right: 6px;
+}
+
+.fa-user,
+.fa-map-marker-alt,
+.fa-envelope-open,
+.fa-comment {
+    font-size: 27px;
+}
+
+.form-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.form-input {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    outline: none;
+    height: 48px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.input-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    height: 100%;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-textarea {
+    position: relative;
+}
+
+.textarea {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    margin-top: 10px;
+}
+
+.submit {
+    border-style: none;
+    border-radius: 25px;
+    color: aliceblue;
+    background-color: rgb(38, 70, 83);
+    margin: 5px;
+    cursor: pointer;
+}
+
+.input-item:focus+.form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.textarea:focus+.form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.input-item:not(:placeholder-shown).input-item:not(:focus)+.form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}
+
+.textarea:not(:placeholder-shown).textarea:not(:focus)+.form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}
+
+.modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.411);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.modal h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.modal p {
+    margin: 20px 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.modal img {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 300px;
+}
+
+
+
+/* ---------------------------------- Footer ---------------------------------- */
+footer {
+    background-color: rgb(38, 70, 83);
+}
+
+.center-footer {
+    margin: 0 20px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* padding: 0 20px; */
+}
+
+.left-footer {
+    margin: 0 auto 0 40px;
+}
+
+.right-footer {
+    margin: 0 40px 0 auto;
+}
+
+.info-left {
+    text-align: left;
+    width: 100%;
+    color: rgb(224, 251, 252);
+}
+
+.info-right {
+    text-align: right;
+    width: 100%;
+    color: rgb(224, 251, 252);
+}
+
+.info-top {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    /* border-top: 1px solid white; */
+    color: rgb(224, 251, 252);
+}
+
+.info-center {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+
+    border-top: 1px solid white;
+    color: rgb(224, 251, 252);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-instagram-square,
+.fa-twitter-square,
+.fa-facebook-square,
+.fa-envelope {
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+/* about.html css */
+.My-Blog {
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+}
+
+.section-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.section-title {
+    font-size: 40px;
+    margin: 50px 0 0;
+}
+
+.section-subtitle {
+    font-size: 15px;
+    color: gray;
+    margin: 10px 0 0;
+}
+
+.about-flex-item {
+    display: block;
+}
+
+.about-image {
+    margin: 0;
+}
+
+.blob-image {
+    width: 500px;
+    height: auto;
+    transform: rotate(-90deg);
+}
+
+.blogger-image {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    left: 850px;
+    top: 350px;
+}
+
+.about-description p {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+}
+
+.about-description h4 {
+    color: gray;
+    letter-spacing: 2px;
+}
+
+.skills-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.skill-item {
+    box-shadow: 0 0 3px gainsboro;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.skill-item img {
+    width: 200px;
+    height: 180px;
+}
+
+.skill-item p {
+    padding: 5px;
+    box-shadow: 0 0 10px gainsboro;
+    border-radius: 5px;
+    background-color: rgb(243, 199, 117);
+}
+
+.activity-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.activity-item {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 3px gainsboro;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.activity-item img {
+    width: 350px;
+    height: auto;
+}
+
+body {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    * {
+        font-size: 2.5vw;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .contact-container {
+        justify-content: center;
+    }
+
+    .illustration-img {
+        display: none;
+    }
+
+    .modal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        max-width: 60%;
+        max-height: 40%;
+        padding: 10px;
+    }
+
+    .modal h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 4vw;
+    }
+
+    .modal img {
+        max-width: 60%;
+    }
+
+    .section-title {
+        font-size: 4vw;
+    }
+
+    .section-subtitle {
+        font-size: 2vw;
+    }
+
+    .blob-image {
+        max-width: 60%;
+        max-height: 60%;
+        transform: rotate(-90deg);
+    }
+
+    .blogger-image {
+        position: absolute;
+        max-width: 27%;
+        max-height: 50%;
+        left: 37%;
+        top: 100px;
+    }
+
+    .about-description p {
+        width: 80%;
+    }
+
+    .skill-item {
+        margin: 5px;
+    }
+
+    .blogger-image {
+        position: absolute;
+        max-width: 40%;
+        max-height: 40%;
+        top: 30vw;
+    }
+/*
+    main {
+        margin-top: 40px;
+    }
+*/
+    .header {
+        height: 80px;
+    }
+
+    .header-flex {
+        display: block;
+        padding: 3px;
+    }
+
+    .jumbotron-title {
+        font-size: 4vw;
+    }
+
+    .mini-text-flex {
+        justify-content: center;
+        margin: 3px;
+    }
+
+    .jumbotron-text {
+        text-align: center;
+    }
+
+    .mini-text {
+        text-align: center;
+        padding-bottom: 30px;
+        margin: 10px;
+    }
+
+    .jumbotron img {
+        display: none;
+    }
+
+    .article-title {
+        font-size: 4vw;
+    }
+
+    .project-container {
+        display: block;
+    }
+
+    .project-container {
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        max-width: 100%;
+        max-height: 20%;
+    }
+
+    .video-content {
+        max-width: 100%;
+        max-height: 220px;
+    }
+
+    nav {
+        position: absolute;
+        right: 0;
+        margin: 2px 30px 0px;
+    }
+}
